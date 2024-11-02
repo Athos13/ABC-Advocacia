@@ -1,0 +1,416 @@
+body,h1,h2,h3,h4,ul,li,a,p,textarea{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'Outfit','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+}
+/* .kaisei-decol-regular {
+    font-family: "Kaisei Decol", serif;
+    font-weight: 400;
+    font-style: normal;
+  } */
+img{
+    display: block;
+    max-width: 100%;
+}
+h2{
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #191919;
+}
+input, textarea{
+    border: 1px solid #999999;
+}
+input{
+    box-sizing: border-box;
+    height: 30px;
+    border-radius: 5px;
+    padding-left: 10px;
+    font-size: 1rem ;
+}
+
+header{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    z-index: 5;
+    background-color: white;
+}
+header h1{
+    font-family:  'Kaisei Decol','Times New Roman', Times, serif;
+    font-size: 1.5rem; /* = 24px dividido pro 16px*/
+    font-weight: 400;
+    color: #BD560E;
+}
+header nav{
+    display: flex;
+    align-items: center;
+}
+header nav ul{
+    width:402px;
+    display: flex;
+    justify-content: space-around;
+}
+header nav ul a{
+    font-size: 0.8125rem;
+    color:#000000
+}
+
+main{
+    background-image: linear-gradient(rgba(0,0,0, .63),rgba(0,0,0, .63)100%), url('./img/BgHome.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    padding-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white
+}
+main div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+main h2{
+    font-family:  'Kaisei Decol','Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 1.875rem;
+    margin-bottom: 10px;
+    color: #fff;
+}
+main p{
+    font-size: 1rem;
+    font-weight: 400;
+    max-width: 70%;
+    margin-bottom: 40px;
+    color: #F2F2F2;
+}
+.botaoSaibaMais{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 60px;
+    color:#BD560E;
+    background-color: white;
+    font-weight: 600;
+    box-sizing: border-box;
+    border: 1px solid #BD560E;
+    border-radius: 8px;
+    transition: 0.9s;
+    cursor: pointer;
+}
+.botaoSaibaMais:hover{
+    color:#fff;
+    /* background-color:#BD560E; */
+    
+    background-image: linear-gradient(to bottom, #BD560E, #D97026);
+    border: 1px solid #D2A88A;
+    box-shadow: 0px 0px 8px #D2A88A;
+}
+
+
+
+
+#escritorio {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+    padding-top: 80px;
+}
+#escritorio .textDecor{
+    display: inline-block;
+    max-width: 8ch;
+    font-family: 'Kaisei Decol','Times New Roman', Times, serif;
+    font-size: 2.5rem;
+    line-height: 1.7;
+    color: #BD560E;
+    padding-right: 50px;
+}
+#escritorio h2{
+    margin-bottom: 15px;
+}
+#escritorio p{
+    max-width: 600px;
+    color: #333333;
+}
+#escritorio div p:nth-child(2),#escritorio div p:nth-child(3){
+    margin-bottom: 20px;
+}
+#escritorio div div p{
+    color: #000000;
+} 
+#escritorio div span{
+    color: #A94B08;
+    font-weight: 600;
+}
+
+
+
+#equipe{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+#equipe h2{
+    padding-bottom: 40px;
+}
+#equipe .container-equipe{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+#equipe .container-equipe .containerLista{
+    display: flex;
+    justify-content: space-between;
+}
+#equipe h3{
+    font-weight: 500;
+    color: #A46232;
+    font-size: 1.25rem;
+    text-align: center;
+    margin-bottom: 10px;
+}
+#equipe .containerLista{
+    display: flex;
+}
+#equipe .containerLista .containerIMG, #equipe .containerLista p{
+ max-width: 200px;
+ text-align: center;
+ color: #333333;
+}
+#equipe .containerLista .containerIMG{
+    height: 230px;
+    margin-bottom: 10px;
+}
+#equipe .containerLista .containerIMG img{
+    height: 230px;
+    border-radius: 8px;
+}
+
+
+
+
+#atuacao{
+    margin-bottom: 100px;
+}
+#atuacao h2{
+    text-align: center;
+    margin-bottom: 40px;
+}
+#atuacao .container-atuacao{
+    display: flex;
+    max-width: 80%;
+    justify-content: start;
+    margin: auto;
+}
+#atuacao h3{
+    color: #BD560E;
+    font-family: 'Kaisei Decol','Times New Roman', Times, serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+#atuacao .container-atuacao {
+    margin-bottom: 50px;
+}
+#atuacao .container-atuacao .containerLista{
+    width:60%;
+}
+#atuacao .container-atuacao .containerLista div{
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: #F7F5F3;
+    border-radius: 8px;
+}
+#atuacao .container-atuacao .containerLista div:not(:last-child){
+    margin-bottom: 30px;
+}
+#atuacao .container-atuacao .containerLista p{
+    color: #333333;
+}
+
+#atuacao .container-atuacao .container-decor{
+    display: flex;
+    flex-direction: column;
+}
+#atuacao span{
+    display: inline-block;
+    max-width: 10ch;
+    font-size: 3rem;
+    font-family: 'Kaisei Decol','Times New Roman', Times, serif;
+    font-weight: bold;
+    padding-left: 50px;
+    padding-top: 20px;
+    line-height: 1.3;
+    margin-bottom: 10px;
+    letter-spacing:6px;
+}
+#atuacao .botaoSaibaMais{
+    margin: auto;
+    color: #fff;
+    background-color: #BD560E;
+    border: 3px solid #D2A88A;
+    transition: 0.8s;
+}
+#atuacao .botaoSaibaMais:hover{
+    background-image: linear-gradient(to bottom, #BD560E, #D97026);
+    width: 220px;
+    box-shadow: 0 8px 4px -2px#E5E5E5;
+} 
+
+.gradiente{
+      /* Primeiro passo: definir um degradê como fundo */
+  background-image: linear-gradient(to right,#F2F2F2, #CCCCCC);
+  
+  /* Segundo passo: apagar do fundo tudo que não estiver imediatamente atrás de texto */
+  background-clip: text;
+  -webkit-background-clip: text; /* Alguns navegadores precisam do prefixo */
+
+  /* Terceiro passo: apagar o texto, deixando apenas o fundo atrás dele */
+  -webkit-text-fill-color: transparent;
+
+  /* Cor que contraste com o degradê, caso o navegador não suporte `background-clip: text` */
+  color: black;
+}
+
+
+
+#contato{
+    background-image: linear-gradient(to bottom, #FFFFFF, #F7F5F3);
+}
+#contato h2{
+    margin-bottom: 10px;
+}
+#contato p, #contato ul li a{
+    margin-bottom: 40px;
+    color: #333333;
+}
+#contato p, #contato h2{
+    text-align: center;
+}
+#contato ul {
+    margin: auto;
+    width: 60%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 60px;
+}
+#contato ul span{
+    color: #191919;
+    font-weight: 500;
+}
+#contato ul li p, #contato ul li a{
+    text-align: start;
+}
+#contato ul li{
+    position: relative;
+}
+#contato ul li:nth-child(1),#contato ul li:nth-child(2){
+    margin-bottom: 20px;
+}
+#contato ul li::before{
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    left: -20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#contato ul li:nth-child(1):before{
+    background-image: url('./icons/telIcon.svg');
+}
+#contato ul li:nth-child(2):before{
+    background-image: url('./icons/localIcon.svg');
+}
+#contato ul li:nth-child(3):before{
+    background-image: url('./icons/emailIcon.svg');
+}
+#contato ul li:nth-child(4):before{
+    background-image: url('./icons/horarioIcon.svg');
+}
+#contato form label{
+    display: block;
+}
+#contato form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 60%;
+    margin: auto;
+    gap: 10px 0;
+    justify-items: start;
+    justify-content: start;
+    padding-bottom: 70px;
+}
+#contato p:nth-child(2){
+    margin-bottom: 30px;
+}
+#contato form div, #contato form input, #contato form textarea{
+ width: 100%;
+}
+#contato form div:nth-child(1), #contato form div:nth-child(2){
+ width: 95%;
+}
+#contato form div:nth-child(2){
+    justify-self: end;
+}
+#contato form div:nth-child(3), #contato form div:nth-child(4){
+ grid-column:span 3;
+}
+#contato form textarea{
+    height: 100px;
+    margin-bottom: 30px;
+}
+#contato form input[type='submit']{
+    grid-column: span 3;
+    width: 40%;
+    height: 40px;
+    justify-self: center;
+    background-color: #333333;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+footer{
+    display: flex;
+    justify-content: start;
+    position: relative;
+    background-color: #191919;
+    color: #fff;
+    height: 110px;
+}
+
+footer ul {
+    width: 70px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top:45px;
+    padding-left: 40px;
+}
+footer ul li a{
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 28px;
+    height: 28px;
+}
+footer ul #iconFace{
+    background-image: url('./icons/FacebookIcon.svg');
+}
+footer ul #iconInsta{
+    background-image: url('./icons/InstagramIcon.svg');
+}
+footer span{
+    margin: auto
+}
