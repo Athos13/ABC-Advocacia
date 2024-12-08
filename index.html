@@ -5,15 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/responsivo.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Kaisei+Decol&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaisei+Decol&display=swap" rel="stylesheet">
+    <script>document.documentElement.classList.add('jsAtivo')</script>
     <title>ABC Advocacia</title>
 </head>
 <body>
     <header>
         <h1>ABC Advocacia</h1>
         <nav>
+            <button>
+                <div id="traco-cima"></div>
+                <div id="traco-baixo"></div>
+            </button>
+            
             <ul>
                 <li>
                     <a href="#home">HOME</a>
@@ -31,7 +38,9 @@
                     <a href="#contato">CONTATO</a>
                 </li>
             </ul>
+            
         </nav>
+       
     </header>
 
     <main id="home">
@@ -40,7 +49,7 @@
             <p>Movidos pela busca constante de soluções inovadoras e eficazes para os 
                 desafios dos nossos clientes.
             </p>
-            <a class="botaoSaibaMais">SABER  MAIS</a>
+            <a href="#" class="botaoSaibaMais">SABER  MAIS</a>
         </div>
     </main>
 
@@ -190,16 +199,13 @@
         
     </div>
     
-    <a class="botaoSaibaMais">SABER  MAIS</a>
+    <a href="#" class="botaoSaibaMais">SABER  MAIS</a>
     </section>
 
 
 
 <section id="contato">
     <h2>CONTATO</h2>
-    <p>Estamos prontos para atender às suas necessidades jurídicas com a seriedade e eficiência que 
-        você merece
-    .</p>
 
     <ul>
         <li>
@@ -216,7 +222,7 @@
         </li>
     </ul>
 
-    <p>Ou preencha o formulário abaixo, e retornaremos o mais breve possível:</p>
+    <p>Preencha o formulário abaixo, e retornaremos o mais breve possível:</p>
     <form>
         <div>
             <label for="nome">Nome</label>
@@ -244,5 +250,6 @@
         </ul>
         <span>Desenvolvido por Athos M. Muniz</span>    
 </footer>
+<script src="assets/script.js"></script>
 </body>
 </html>
